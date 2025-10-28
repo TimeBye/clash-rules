@@ -1,0 +1,8 @@
+payload:
+  - PROCESS-NAME,netbird
+  - PROCESS-NAME,netbird.exe
+  - PROCESS-NAME,netbird-ui
+  - PROCESS-NAME,netbird-ui.exe
+
+  # 雪花啤酒
+  - DOMAIN-SUFFIX,crb.cn
