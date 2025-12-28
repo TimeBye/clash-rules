@@ -6,3 +6,7 @@ payload:
 
   # 雪花啤酒
   - DOMAIN-SUFFIX,crb.cn
+  - DOMAIN-SUFFIX,choerodon.cc
+  - DOMAIN-SUFFIX,choerodon.io
+  - DOMAIN-SUFFIX,choerodon.co
+  - DOMAIN-SUFFIX,choerodon.com.cn
