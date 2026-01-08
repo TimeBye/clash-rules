@@ -3,6 +3,8 @@ payload:
   - PROCESS-NAME,netbird.exe
   - PROCESS-NAME,netbird-ui
   - PROCESS-NAME,netbird-ui.exe
+  - PROCESS-NAME-REGEX,.*teams.*
+  - PROCESS-NAME-REGEX,.*Teams.*
 
   # 雪花啤酒
   - DOMAIN-SUFFIX,crb.cn
