@@ -5,6 +5,8 @@ payload:
   - PROCESS-NAME,netbird-ui.exe
   - PROCESS-NAME,MSTeams
   - PROCESS-NAME,Microsoft Teams WebView Helper
+  - PROCESS-NAME,ms-teams.exe
+  - PROCESS-NAME,msedgewebview2.exe
 
   # 雪花啤酒
   - DOMAIN-SUFFIX,crb.cn
