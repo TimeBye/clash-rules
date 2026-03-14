@@ -7,6 +7,8 @@ payload:
   - PROCESS-NAME,Microsoft Teams WebView Helper
   - PROCESS-NAME,ms-teams.exe
   - PROCESS-NAME,msedgewebview2.exe
+  - PROCESS-NAME,syncthing
+  - PROCESS-NAME,syncthing.exe
 
   # 雪花啤酒
   - DOMAIN-SUFFIX,crb.cn
