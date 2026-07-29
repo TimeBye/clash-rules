@@ -14,3 +14,4 @@ payload:
   - DOMAIN-SUFFIX,choerodon.co
   - DOMAIN-SUFFIX,choerodon.com.cn
   - DOMAIN-SUFFIX,gsocloud.xyz
+  - DOMAIN-SUFFIX,wsmdn.top
