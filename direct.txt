@@ -17,3 +17,4 @@ payload:
   - DOMAIN-SUFFIX,yydgcs.com
   - DOMAIN-SUFFIX,wsmdn.top
   - DOMAIN-SUFFIX,dpdns.org
+  - DOMAIN-SUFFIX,ghfast.top
