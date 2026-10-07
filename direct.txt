@@ -18,3 +18,4 @@ payload:
   - DOMAIN-SUFFIX,wsmdn.top
   - DOMAIN-SUFFIX,dpdns.org
   - DOMAIN-SUFFIX,ghfast.top
+  - DOMAIN-SUFFIX,byteintlapi.com
