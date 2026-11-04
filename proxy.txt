@@ -1,3 +1,0 @@
-payload:
-  # 利丰
-  - DOMAIN-SUFFIX,neotangent.com
