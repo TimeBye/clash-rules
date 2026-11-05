@@ -12,4 +12,4 @@ COPY --from=build /out/subscription-server /app/subscription-server
 USER 65532:65532
 EXPOSE 8080
 ENTRYPOINT ["/app/subscription-server"]
-CMD ["--listen", "0.0.0.0:8080", "--template", "/app/config/youknow.yaml"]
+CMD ["--template", "/app/config/youknow.yaml"]
