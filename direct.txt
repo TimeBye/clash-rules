@@ -3,12 +3,9 @@ payload:
   - PROCESS-NAME,netbird.exe
   - PROCESS-NAME,netbird-ui
   - PROCESS-NAME,netbird-ui.exe
-  - PROCESS-NAME,MSTeams
-  - PROCESS-NAME,Microsoft Teams WebView Helper
-  - PROCESS-NAME,ms-teams.exe
-  - PROCESS-NAME,msedgewebview2.exe
   - PROCESS-NAME,syncthing
   - PROCESS-NAME,syncthing.exe
+  - PROCESS-NAME,语雀
 
   - DOMAIN-SUFFIX,choerodon.cc
   - DOMAIN-SUFFIX,choerodon.co
@@ -18,3 +15,4 @@ payload:
   - DOMAIN-SUFFIX,wsmdn.top
   - DOMAIN-SUFFIX,dpdns.org
   - DOMAIN-SUFFIX,ghfast.top
+  - DOMAIN-SUFFIX,fastly.jsdelivr.net
