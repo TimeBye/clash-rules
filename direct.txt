@@ -1,0 +1,18 @@
+payload:
+  - PROCESS-NAME,netbird
+  - PROCESS-NAME,netbird.exe
+  - PROCESS-NAME,netbird-ui
+  - PROCESS-NAME,netbird-ui.exe
+  - PROCESS-NAME,syncthing
+  - PROCESS-NAME,syncthing.exe
+  - PROCESS-NAME,语雀
+
+  - DOMAIN-SUFFIX,choerodon.cc
+  - DOMAIN-SUFFIX,choerodon.co
+  - DOMAIN-SUFFIX,choerodon.com.cn
+  - DOMAIN-SUFFIX,gsocloud.xyz
+  - DOMAIN-SUFFIX,yydgcs.com
+  - DOMAIN-SUFFIX,wsmdn.top
+  - DOMAIN-SUFFIX,dpdns.org
+  - DOMAIN-SUFFIX,ghfast.top
+  - DOMAIN-SUFFIX,fastly.jsdelivr.net
