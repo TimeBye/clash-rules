@@ -11,8 +11,8 @@ import (
 )
 
 // proxyProvider 获取并清洗指定 provider 的订阅，不做模板合并。
-func (s *service) proxyProvider(ctx context.Context, name string) ([]byte, error) {
-	root, err := s.loadTemplate()
+func (s *service) proxyProvider(ctx context.Context, name, template string) ([]byte, error) {
+	root, err := s.loadTemplate(template)
 	if err != nil {
 		return nil, err
 	}

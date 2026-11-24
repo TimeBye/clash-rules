@@ -47,11 +47,12 @@ func (s *service) subscribe(w http.ResponseWriter, r *http.Request) {
 		log.Print("用户订阅已过期，已返回空白配置（无可用节点，所有流量 DIRECT 直连）")
 		return
 	}
+	template := r.URL.Query().Get("template")
 	var data []byte
 	if user != nil && user.provider != "" {
-		data, err = s.proxyProvider(r.Context(), user.provider)
+		data, err = s.proxyProvider(r.Context(), user.provider, template)
 	} else {
-		data, err = s.generate(r.Context())
+		data, err = s.generate(r.Context(), template)
 	}
 	if err != nil {
 		log.Printf("生成订阅失败: %v", err)

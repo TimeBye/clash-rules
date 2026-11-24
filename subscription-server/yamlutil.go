@@ -5,14 +5,28 @@ import (
 	"errors"
 	"io"
 	"os"
+	"path/filepath"
 	"strconv"
+	"strings"
 	"unicode/utf8"
 
 	"gopkg.in/yaml.v3"
 )
 
-func (s *service) loadTemplate() (*yaml.Node, error) {
-	data, err := os.ReadFile(s.template)
+func (s *service) loadTemplate(requested string) (*yaml.Node, error) {
+	path := s.template
+	if requested != "" {
+		name := filepath.Base(strings.ReplaceAll(requested, `\`, "/"))
+		if name == "." || !filepath.IsLocal(name) {
+			return nil, errors.New("无效的模板文件名")
+		}
+		path = filepath.Join(filepath.Dir(s.template), name)
+		info, err := os.Lstat(path)
+		if err != nil || !info.Mode().IsRegular() {
+			return nil, errors.New("指定的模板必须是目录内的普通文件")
+		}
+	}
+	data, err := os.ReadFile(path)
 	if err != nil {
 		return nil, errors.New("无法读取模板文件")
 	}

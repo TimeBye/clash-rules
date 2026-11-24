@@ -8,8 +8,8 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-func (s *service) generate(ctx context.Context) ([]byte, error) {
-	root, err := s.loadTemplate()
+func (s *service) generate(ctx context.Context, template string) ([]byte, error) {
+	root, err := s.loadTemplate(template)
 	if err != nil {
 		return nil, err
 	}
