@@ -28,7 +28,7 @@ func (s *service) subscribe(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	ua := strings.ToLower(r.UserAgent())
-	if !strings.Contains(ua, "clash.meta") && !strings.Contains(ua, "clashmeta") && !strings.Contains(ua, "mihomo") {
+	if !strings.Contains(ua, "clash") && !strings.Contains(ua, "mihomo") {
 		redirectBaidu(w, r)
 		return
 	}
